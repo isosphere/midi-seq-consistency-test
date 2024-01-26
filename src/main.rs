@@ -42,7 +42,7 @@ impl fmt::Display for Step {
         variance /= self.duration.len() as f32;
         let std_dev = variance.sqrt();
 
-        write!(f, "Note: {}, Duration: {}-{} μs (mean {:.0} μs, σ = {:.0} μs)", self.note, min_duration, max_duration, mean_duration, std_dev)
+        write!(f, "Note: {}, Duration: {}-{} μs (mean {:.0} μs, σ = {:.0} μs, n = {})", self.note, min_duration, max_duration, mean_duration, std_dev, self.duration.len())
     }
 }
 
