@@ -100,9 +100,9 @@ fn run() -> Result<(), Box<dyn Error>> {
                     //println!("TRANSPORT: Clock")
                 },
                 &[252] => {
-                    for step in recorded_steps.iter() {
+                    for (i, step) in recorded_steps.iter().enumerate() {
                         if let Some(step) = step {
-                            println!("{}", step);
+                            println!("Step {}: {}", i+1, step);
                         }
                     }
                 },
