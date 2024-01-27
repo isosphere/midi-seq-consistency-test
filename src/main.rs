@@ -102,7 +102,7 @@ fn run() -> Result<(), Box<dyn Error>> {
                 &[252] => {
                     for (i, step) in recorded_steps.iter().enumerate() {
                         if let Some(step) = step {
-                            println!("Step {}: {}", i+1, step);
+                            println!("Step {}:\t{}", i+1, step);
                         }
                     }
                 },
