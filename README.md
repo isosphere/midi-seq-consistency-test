@@ -1,6 +1,8 @@
 # Usage
 
-Create a 16 step pattern that begins with middle-C (MIDI note ID=60). Do not repeat this note elsewhere in the sequence, but you may use any other notes. Send a STOP transport command to produce descriptive statistics to standard output. 
+Create a 16 step pattern that begins with middle-C (MIDI note ID=60). Do not repeat this note elsewhere in the sequence - it's used to detect another cycle of the pattern - but you may use any other notes. Allow the sequence to repeat as many times as you would like to compute descriptive statistics for.
+
+Send a STOP transport command to produce descriptive statistics to standard output. 
 
 This tool produces output like this:
 
